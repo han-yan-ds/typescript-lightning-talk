@@ -1,12 +1,12 @@
-function times(a, b) { //
+function times(a: number, b: number): number {
   return a * b;
 }
 
-let nine; //
-let three; //
+let nine: number;
+let three: number;
 
 nine = 9;
-three = '3';
+three = 3;
 
-console.log("times(nine, three):", times(nine, three));
-console.log("times('Steve', three)", times('nine', three)); // NaN
+console.log(times(nine, three)); // 27
+console.log(times('nine', three)); // TypeScript Compile Error
